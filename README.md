@@ -28,3 +28,11 @@ https://user-images.githubusercontent.com/14288989/197375468-79450ee9-684d-4a4e-
 
 https://user-images.githubusercontent.com/14288989/197375480-9a89303e-4038-4bae-8a47-2bfb9e362e82.mp4
 
+
+
+Using the DPDT switch
+
+
+https://www.elprocus.com/dpdt-switch/
+
+![image](https://user-images.githubusercontent.com/14288989/197392619-38c5ed97-b7a9-441d-9005-3f2684413aa5.png)

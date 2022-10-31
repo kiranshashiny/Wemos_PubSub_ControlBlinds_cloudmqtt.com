@@ -3,7 +3,32 @@
 
 Some photos and videos of the unit connected to the window.
 
-The curtains were from Amazon.
+This log is about how to control the window blinds from a smartphone or a tablet/PC.
+
+In this case, I have used my Mac to send instructions to the curtain to lower or raise. This uses the Publish / Subscribe model of MQTT protocol, where the smartPhone is publishing instructions and the microcontroller attached to the curtain is acting as a subscriber.
+
+At the curtain end, I have a wemos D1 R1 looking at the cloud broker cloudmqtt.com waiting to receive instructions and act accordingly.
+
+The Publisher code is in Node.js and is running on the Mac OS and user can click on "raise" or "Lower" buttons and they will publish appropriate commants to the cloud mqtt broker.
+
+![image](https://user-images.githubusercontent.com/14288989/198988796-cb7a2a44-930f-4490-aadd-0139c7f73e89.png)
+
+
+The curtain hardware were purchased from Amazon. Likewise the 12v geared DC motor, wemos D1 R1 microcontroller, L298 motor driver were purchased from online stores.
+
+The microcontroller on receiving appropriate instructions will send a High/Low signal to the (L298) motor driver.
+
+The motor driver has 3 pins to control the motor, The EN ( Enable) pin to turn on and off the motor, The IN1 and IN2 to control the direction of the motor.
+
+If EN1 is High, then signals at the IN1 and IN2 pins will be looked at.
+
+If IN1 is High, and IN2 is low, then the motor turns clockwise. ( or lower the curtains )
+
+If IN1 is Low and IN2 is High, then the motor turns anticlockwise ( or raise the curtains )
+
+This part of the logic was introduced in the Microcontroller code, which lowered or raised the curtains.
+
+
 
 
 ![image](https://user-images.githubusercontent.com/14288989/197375512-54fa4a56-7c3e-4ed2-8de5-338d9a53760f.png)

@@ -72,5 +72,8 @@ The Arduino IDE -> Board options for Wemos D1 R1 is
 The motor driver uses 3.3v onwards for IN pins to activate and deactivate.
 
 
+// Pin Diagram
+
+![image](https://user-images.githubusercontent.com/14288989/213679672-678aa715-2d61-4860-bed7-89fb6c4474fd.png)
 
 

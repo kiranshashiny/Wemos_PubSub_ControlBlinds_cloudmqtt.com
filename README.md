@@ -61,3 +61,16 @@ Using the DPDT switch
 https://www.elprocus.com/dpdt-switch/
 
 ![image](https://user-images.githubusercontent.com/14288989/197392619-38c5ed97-b7a9-441d-9005-3f2684413aa5.png)
+
+The Arduino IDE -> Board options for Wemos D1 R1 is
+
+![image](https://user-images.githubusercontent.com/14288989/213639227-fadcfde1-e0a5-40cd-8256-20d155a689bb.png)
+
+
+--
+
+The motor driver uses 3.3v onwards for IN pins to activate and deactivate.
+
+
+
+
